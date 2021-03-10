@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="This is an online registration form mockup made by Christopher Carrillo intended for a Treehouse tech project assginment">
+    <title>Online Regestration Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/0cfec90f86.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header id="header-title"> <!-- start of header -->
+        <div class="logo">
+                <h1>THE CODE REVIEW</h1>
+        </div>
+        <div class="header-intro container">
+            <h1>Signup for our newsletter</h1>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+        </div>
+    </header> <!-- end of header -->
+    <div class="body-wrap"> <!-- body wrap start -->
+        <hr class="header-border container">
+        <main>
+            <div class="form-wrapper container"> <!-- form wrapper -->
+                <form> 
+                    <!--*************** contact information ****************-->
+                    <fieldset class="contact-info">
+                        <legend>Contact Information</legend>
+                        <label for="name">Full Name</label>  <!-- name -->
+                        <input required type="text" id="name" name="user_name" placeholder="Required">
+                        <label for="mail">Email Address</label>  <!-- email address -->
+                        <input required type="email" id="mail" name="user_email" placeholder="Required">
+                        <label for="phone">Phone Number</label>  <!--  phone number-->
+                        <input type="tel" id="phone" name="user_number" placeholder="xxx-xxx-xxxx"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        <label for="address">Street Address</label>  <!-- address -->
+                        <input type="text" id="address" name="user_address" placeholder="Street address or P.O. Box">
+                        <label for="city">City</label>  <!-- city -->
+                        <input type="text" id="city" name="user_name">
+                        <!--********** state select ************-->
+                        <label for="state">State</label> 
+                        <select id="state" name="users_state" required>
+                            <option value="" disabled selected hidden>Choose a State</option>
+                            <option value="alabama">AL</option>
+                            <option value="alaska">AK</option>
+                            <option value="american_samoa">AS</option>
+                            <option value="arizona">AZ</option>
+                            <option value="arkansas">AR</option>
+                            <option value="califrornia">CA</option>
+                            <option value="colorado">CO</option>
+                            <option value="connecticut">CT</option>
+                            <option value="delaware">DE</option>
+                            <option value="district_of_columbia">DC</option>
+                            <option value="florida">FL</option>
+                            <option value="georgia">GA</option>
+                            <option value="guam">GU</option>
+                            <option value="hawaii">HI</option>
+                            <option value="idaho">ID</option>
+                            <option value="illinois">IL</option>
+                            <option value="indiana">IN</option>
+                            <option value="iowa">IA</option>
+                            <option value="kansas">KS</option>
+                            <option value="kentuky">KY</option>
+                            <option value="louisiana">LA</option>
+                            <option value="maine">ME</option>
+                            <option value="maryland">MD</option>
+                            <option value="massachusetts">MA</option>
+                            <option value="michigan">MI</option>
+                            <option value="minnesota">MN</option>
+                            <option value="mississippi">MS</option>
+                            <option value="missouri">MO</option>
+                            <option value="montana">MT</option>
+                            <option value="nebraska">NE</option>
+                            <option value="nevada">NV</option>
+                            <option value="new_hampshire">NH</option>
+                            <option value="new_jesrsey">NJ</option>
+                            <option value="new_mexico">NM</option>
+                            <option value="new_york">NY</option>
+                            <option value="north_carolina">NC</option>
+                            <option value="north_dakota">ND</option>
+                            <option value="nothern_mariana_is">MP</option>
+                            <option value="ohio">OH</option>
+                            <option value="oklahoma">OK</option>
+                            <option value="oregon">OR</option>
+                            <option value="pennsylvania">PA</option>
+                            <option value="puerto_rico">PR</option>
+                            <option value="rhode_island">RI</option>
+                            <option value="south_carolina">SC</option>
+                            <option value="south_dakota">SD</option>
+                            <option value="tennessee">TN</option>
+                            <option value="texas">TX</option>
+                            <option value="utah">UT</option>
+                            <option value="vermont">VT</option>
+                            <option value="virginia">VI</option>
+                            <option value="virgin_islands">VI</option>
+                            <option value="washington">WA</option>
+                            <option value="west_virginia">wv</option>
+                            <option value="wisconsin">WI</option>
+                            <option value="wyoming">WY</option>
+                        </select>
+                        <!--******** state select end *********-->
+                        <label for="zip">Zip Code</label>  <!-- zip code -->
+                        <input type="text" id="zip" name="user_zip_code">
+                    </fieldset>
+                    <!--************ contact information end ************-->
+                    <hr class="mid-section">
+                    <!--****************** newsletter ********************-->
+                    <fieldset class="newsletter">
+                        <legend>Newsletter</legend>
+                        <div class="newsletter-wrapper">
+                            <!-- newsletter preference -->
+                            <label class="title-section">Select the newsletter you would like to recieve</label>
+                            <label class="title-item checkbox-label" for="html"><input type="checkbox" id="html" value="html_news" name="recieve_news" checked> HTML News</label><!-- html -->
+                            <label class="title-item checkbox-label" for="css"><input type="checkbox" id="css" value="css_news" name="recieve_news" checked > CSS News</label><!-- css -->
+                            <label class="title-item checkbox-label" for="javascript"><input type="checkbox" id="javascript" value="javascript_news" name="recieve_news" checked> Javascript News</label> <!-- java -->
+                            <!-- newsletter format -->
+                            <label class="title-section">Newsletter Format</label>
+                            <label class="radio-label" for="html_format"> <input type="radio" id="html_format" value="html_newsletter" name="format" required> <!-- html format -->
+                                    <span class="radio-dot"></span> HTML</label>
+                            <label class="radio-label" for="plain_text_format"> <input type="radio" id="plain_text_format" value="plain_text_newsletter" name="format"> <!-- plain text format -->
+                                    <span class="radio-dot"></span> Plain Text</label>
+                            <label for="other_topics">Other topics you'd like to hear about</label>
+                            <textarea id="other_topics" name="user_topics" rows="4" cols="50" placeholder="Optional"></textarea>
+                        </div> 
+                    </fieldset>
+                    <!--**************** newsletter end *******************-->
+                    <button type="submit">Sign Up</button> <!-- sign up button -->
+                </form> 
+            </div> <!-- form wrapper end -->
+        </main>
+        <footer>
+            <p class="copyright">Copyright 2021, Christopher Carrillo</p>
+        </footer>
+    </div> <!-- body wrap end -->
+</body>
+</html>
