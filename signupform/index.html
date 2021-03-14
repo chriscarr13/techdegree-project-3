@@ -12,98 +12,111 @@
     <script src="https://kit.fontawesome.com/0cfec90f86.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
     <header id="header-title"> <!-- start of header -->
         <div class="logo">
-                <h1>THE CODE REVIEW</h1>
+            <h1>THE CODE REVIEW</h1>
         </div>
-        <div class="header-intro container">
+        <div class="header-intro">
             <h1>Signup for our newsletter</h1>
             <p>Get the latest news on how your code is doing right in your inbox</p>
         </div>
     </header> <!-- end of header -->
-    <div class="body-wrap"> <!-- body wrap start -->
+    <div class="main-wrap"> <!-- body wrap start -->
         <hr class="header-border container">
         <main>
             <div class="form-wrapper container"> <!-- form wrapper -->
                 <form> 
                     <!--*************** contact information ****************-->
                     <fieldset class="contact-info">
-                        <legend>Contact Information</legend>
-                        <label for="name">Full Name</label>  <!-- name -->
-                        <input required type="text" id="name" name="user_name" placeholder="Required">
-                        <label for="mail">Email Address</label>  <!-- email address -->
-                        <input required type="email" id="mail" name="user_email" placeholder="Required">
-                        <label for="phone">Phone Number</label>  <!--  phone number-->
-                        <input type="tel" id="phone" name="user_number" placeholder="xxx-xxx-xxxx"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                        <label for="address">Street Address</label>  <!-- address -->
-                        <input type="text" id="address" name="user_address" placeholder="Street address or P.O. Box">
-                        <label for="city">City</label>  <!-- city -->
-                        <input type="text" id="city" name="user_name">
+                            <legend>Contact Information</legend>
+                        <div class="flex-pair">
+                            <label for="name">Full Name</label>  <!-- name -->
+                            <input required type="text" id="name" name="user_name" placeholder="Required">
+                        </div>
+                        <div class="flex-pair">
+                            <label for="mail">Email Address</label>  <!-- email address -->
+                            <input required type="email" id="mail" name="user_email" placeholder="Required">
+                        </div>
+                        <div class="flex-pair">
+                            <label for="phone">Phone Number</label>  <!--  phone number-->
+                            <input type="tel" id="phone" name="user_number" placeholder="xxx-xxx-xxxx"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        </div>
+                        <div class="flex-pair">
+                            <label for="address">Street Address</label>  <!-- address -->
+                            <input type="text" id="address" name="user_address" placeholder="Street address or P.O. Box">
+                        </div>
+                        <div class="flex-pair">
+                            <label for="city">City</label>  <!-- city -->
+                            <input type="text" id="city" name="user_name">
+                        </div>
                         <!--********** state select ************-->
-                        <label for="state">State</label> 
-                        <select id="state" name="users_state" required>
-                            <option value="" disabled selected hidden>Choose a State</option>
-                            <option value="alabama">AL</option>
-                            <option value="alaska">AK</option>
-                            <option value="american_samoa">AS</option>
-                            <option value="arizona">AZ</option>
-                            <option value="arkansas">AR</option>
-                            <option value="califrornia">CA</option>
-                            <option value="colorado">CO</option>
-                            <option value="connecticut">CT</option>
-                            <option value="delaware">DE</option>
-                            <option value="district_of_columbia">DC</option>
-                            <option value="florida">FL</option>
-                            <option value="georgia">GA</option>
-                            <option value="guam">GU</option>
-                            <option value="hawaii">HI</option>
-                            <option value="idaho">ID</option>
-                            <option value="illinois">IL</option>
-                            <option value="indiana">IN</option>
-                            <option value="iowa">IA</option>
-                            <option value="kansas">KS</option>
-                            <option value="kentuky">KY</option>
-                            <option value="louisiana">LA</option>
-                            <option value="maine">ME</option>
-                            <option value="maryland">MD</option>
-                            <option value="massachusetts">MA</option>
-                            <option value="michigan">MI</option>
-                            <option value="minnesota">MN</option>
-                            <option value="mississippi">MS</option>
-                            <option value="missouri">MO</option>
-                            <option value="montana">MT</option>
-                            <option value="nebraska">NE</option>
-                            <option value="nevada">NV</option>
-                            <option value="new_hampshire">NH</option>
-                            <option value="new_jesrsey">NJ</option>
-                            <option value="new_mexico">NM</option>
-                            <option value="new_york">NY</option>
-                            <option value="north_carolina">NC</option>
-                            <option value="north_dakota">ND</option>
-                            <option value="nothern_mariana_is">MP</option>
-                            <option value="ohio">OH</option>
-                            <option value="oklahoma">OK</option>
-                            <option value="oregon">OR</option>
-                            <option value="pennsylvania">PA</option>
-                            <option value="puerto_rico">PR</option>
-                            <option value="rhode_island">RI</option>
-                            <option value="south_carolina">SC</option>
-                            <option value="south_dakota">SD</option>
-                            <option value="tennessee">TN</option>
-                            <option value="texas">TX</option>
-                            <option value="utah">UT</option>
-                            <option value="vermont">VT</option>
-                            <option value="virginia">VI</option>
-                            <option value="virgin_islands">VI</option>
-                            <option value="washington">WA</option>
-                            <option value="west_virginia">wv</option>
-                            <option value="wisconsin">WI</option>
-                            <option value="wyoming">WY</option>
-                        </select>
+                        <div class="flex-pair"> <!-- select div start -->
+                            <label for="state">State</label> 
+                            <select id="state" name="users_state" required>
+                                <option value="" disabled selected hidden>Choose a State</option>
+                                <option value="alabama">AL</option>
+                                <option value="alaska">AK</option>
+                                <option value="american_samoa">AS</option>
+                                <option value="arizona">AZ</option>
+                                <option value="arkansas">AR</option>
+                                <option value="califrornia">CA</option>
+                                <option value="colorado">CO</option>
+                                <option value="connecticut">CT</option>
+                                <option value="delaware">DE</option>
+                                <option value="district_of_columbia">DC</option>
+                                <option value="florida">FL</option>
+                                <option value="georgia">GA</option>
+                                <option value="guam">GU</option>
+                                <option value="hawaii">HI</option>
+                                <option value="idaho">ID</option>
+                                <option value="illinois">IL</option>
+                                <option value="indiana">IN</option>
+                                <option value="iowa">IA</option>
+                                <option value="kansas">KS</option>
+                                <option value="kentuky">KY</option>
+                                <option value="louisiana">LA</option>
+                                <option value="maine">ME</option>
+                                <option value="maryland">MD</option>
+                                <option value="massachusetts">MA</option>
+                                <option value="michigan">MI</option>
+                                <option value="minnesota">MN</option>
+                                <option value="mississippi">MS</option>
+                                <option value="missouri">MO</option>
+                                <option value="montana">MT</option>
+                                <option value="nebraska">NE</option>
+                                <option value="nevada">NV</option>
+                                <option value="new_hampshire">NH</option>
+                                <option value="new_jesrsey">NJ</option>
+                                <option value="new_mexico">NM</option>
+                                <option value="new_york">NY</option>
+                                <option value="north_carolina">NC</option>
+                                <option value="north_dakota">ND</option>
+                                <option value="nothern_mariana_is">MP</option>
+                                <option value="ohio">OH</option>
+                                <option value="oklahoma">OK</option>
+                                <option value="oregon">OR</option>
+                                <option value="pennsylvania">PA</option>
+                                <option value="puerto_rico">PR</option>
+                                <option value="rhode_island">RI</option>
+                                <option value="south_carolina">SC</option>
+                                <option value="south_dakota">SD</option>
+                                <option value="tennessee">TN</option>
+                                <option value="texas">TX</option>
+                                <option value="utah">UT</option>
+                                <option value="vermont">VT</option>
+                                <option value="virginia">VI</option>
+                                <option value="virgin_islands">VI</option>
+                                <option value="washington">WA</option>
+                                <option value="west_virginia">wv</option>
+                                <option value="wisconsin">WI</option>
+                                <option value="wyoming">WY</option>
+                            </select>
+                        </div> <!-- select div end -->
                         <!--******** state select end *********-->
-                        <label for="zip">Zip Code</label>  <!-- zip code -->
-                        <input type="text" id="zip" name="user_zip_code">
+                        <div class="flex-pair">
+                            <label for="zip">Zip Code</label>  <!-- zip code -->
+                            <input type="text" id="zip" name="user_zip_code">
+                        </div>
                     </fieldset>
                     <!--************ contact information end ************-->
                     <hr class="mid-section">
@@ -128,12 +141,14 @@
                     </fieldset>
                     <!--**************** newsletter end *******************-->
                     <button type="submit">Sign Up</button> <!-- sign up button -->
-                </form> 
+                </form> <!-- form end -->
             </div> <!-- form wrapper end -->
         </main>
-        <footer>
-            <p class="copyright">Copyright 2021, Christopher Carrillo</p>
-        </footer>
     </div> <!-- body wrap end -->
+    <footer> <!-- footer start -->
+        <div class= "copyright-container">
+            <p class="copyright">Copyright 2021, Christopher Carrillo</p>
+        </div>
+    </footer> <!-- footer end -->
 </body>
 </html>
